@@ -11,5 +11,11 @@ void setup() {
 }
 
 void loop() {
-  
+  float sum = 0
+  for (int i = 0; i < 1000; i++) {
+    sum += analogRead(SENSOR);
+  }
+
+  average = sum/1000;
+  Serial.println(average);
 }
