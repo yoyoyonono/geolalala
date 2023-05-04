@@ -6,9 +6,8 @@ void setup() {
     pinMode(LED_RED, OUTPUT);
     pinMode(LED_GRN, OUTPUT);
     pinMode(LED_BLU, OUTPUT);
-    
+    Serial.begin(115200);
 }
 
-void main() {
-
+void loop() {
 }
