@@ -16,6 +16,6 @@ void loop() {
     sum += analogRead(SENSOR);
   }
 
-  average = sum/1000;
+  float average = sum/1000;
   Serial.println(average);
 }
